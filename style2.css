@@ -149,22 +149,5 @@ footer {
 }
 
 
-@media (max-width: 600px) {
-    .categories {
-        flex-direction: column;
-    }
 
-    nav a {
-        display: inline-block;
-        margin: 7px;
-    }
 
-    section {
-        width: 88%;
-        padding: 15px;
-    }
-
-    table {
-        font-size: 12px;
-    }
-}
