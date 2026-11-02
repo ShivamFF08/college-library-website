@@ -1,0 +1,170 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fff8ed;
+    color: #59382d;
+}
+
+
+header {
+    background-color: #a83228;
+    color: #fff8ed;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #fff4dd;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+}
+
+
+section {
+    background-color: #fffdf8;
+    margin: 20px auto;
+    padding: 25px;
+    width: 85%;
+    border-radius: 10px;
+}
+
+
+.welcome {
+    text-align: center;
+    background-color: #ffe2c2;
+}
+
+
+h2 {
+    color: #a83228;
+}
+
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.category {
+    background-color: #ffdfa0;
+    padding: 18px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    color: #713b25;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #e5c9a8;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #c45132;
+    color: white;
+}
+
+
+.announcement {
+    background-color: #fff0bd;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #d8aa83;
+    border-radius: 5px;
+    background-color: #fffaf3;
+}
+
+
+button {
+    background-color: #c45132;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9f3028;
+}
+
+
+.message {
+    display: none;
+    background-color: #fff0bd;
+    color: #713b25;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+
+.answer {
+    display: none;
+    background-color: #ffedd8;
+    padding: 15px;
+    border-radius: 5px;
+    color: #713b25;
+}
+
+
+footer {
+    background-color: #762c25;
+    color: #fff8ed;
+    text-align: center;
+    padding: 15px;
+}
+
+
+@media (max-width: 600px) {
+    .categories {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    section {
+        width: 88%;
+        padding: 15px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}

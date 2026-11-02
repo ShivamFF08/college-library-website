@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Library</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    
+    <header>
+        <h1>KIET Group of institution </h1>
+        <p>Your Knowledge, Our Priority</p>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#books">Books</a>
+            <a href="#rules">Rules</a>
+            <a href="#request">Book Request</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+    </header>
+
+    
+    <section id="home" class="welcome">
+        <h2>Welcome to Our College Library</h2>
+        <p>Explore books, learn new things and grow your knowledge.</p>
+    </section>
+
+    
+    <section>
+        <h2>Book Categories</h2>
+
+        <div class="categories">
+            <div class="category">Computer Science</div>
+            <div class="category">Mathematics</div>
+            <div class="category">Science</div>
+            <div class="category">Literature</div>
+        </div>
+    </section>
+
+   
+    <section id="books">
+        <h2>Available Books</h2>
+
+        <table>
+            <tr>
+                <th>Book Name</th>
+                <th>Author</th>
+                <th>Category</th>
+                <th>Available Copies</th>
+            </tr>
+
+            <tr>
+                <td>Let Us C</td>
+                <td>Yashavant Kanetkar</td>
+                <td>Computer Science</td>
+                <td>5</td>
+            </tr>
+
+            <tr>
+                <td>Python Crash Course</td>
+                <td>Eric Matthes</td>
+                <td>Programming</td>
+                <td>3</td>
+            </tr>
+
+            <tr>
+                <td>Wings of Fire</td>
+                <td>Dr. A.P.J. Abdul Kalam</td>
+                <td>Biography</td>
+                <td>4</td>
+            </tr>
+
+            <tr>
+                <td>Engineering Mathematics</td>
+                <td>B.S. Grewal</td>
+                <td>Mathematics</td>
+                <td>6</td>
+            </tr>
+        </table>
+    </section>
+
+   
+    <section id="rules">
+        <h2>Library Rules</h2>
+
+         <ul>  <!--BULLET POINTS CREATED  -->
+            <li>Students can borrow a maximum of 2 books.</li>
+            <li>Books can be kept for 14 days.</li>
+            <li>Maintain silence inside the library.</li>
+            <li>Return books before the due date.</li>
+            <li>Late return fine is ₹5 per day.</li>
+        </ul>
+
+        <h3>Library Timings</h3>
+        <p>Monday to Saturday: 9:00 AM – 5:00 PM</p>
+        <p>Sunday: Closed</p>
+    </section>
+
+   
+    <section>
+        <h2>Latest Announcements</h2>
+
+        <div class="announcement">
+            <p>📢 New programming books are now available.</p>
+            <p>📢 Library membership renewal starts from Monday.</p>
+            <p>📢 Please return overdue books on time.</p>
+        </div>
+    </section>
+
+    
+    <section id="request">
+        <h2>Book Issue / Request Form</h2>
+
+        <form id="bookForm">
+
+            <label>Student Name:</label>
+            <input type="text" id="studentName"
+                   placeholder="Enter your name" required>
+
+            <label>Roll Number:</label>
+            <input type="number" id="rollNumber"
+                   placeholder="Enter your roll number" required>
+
+            <label>Email:</label>
+            <input type="email" id="email"
+                   placeholder="Enter your email" required>
+
+            <label>Select Book:</label>
+            <select id="bookName" required>
+                <option value="">Select a book</option>
+                <option value="Let Us C">Let Us C</option>
+                <option value="Python Crash Course">Python Crash Course</option>
+                <option value="Wings of Fire">Wings of Fire</option>
+                <option value="Engineering Mathematics">Engineering Mathematics</option>
+            </select>
+
+            <label>Request Date:</label>
+            <input type="date" id="requestDate" required>
+
+            <button type="submit">Submit Request</button>
+
+        </form>
+
+        
+        <div id="confirmation" class="message"></div>
+    </section>
+
+         <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>1. How many books can I borrow?</h3>
+    <button onclick="toggleFAQ('answer1')">Show Answer</button>
+    <p id="answer1" class="answer">
+        Students can borrow a maximum of 2 books.
+    </p>
+
+    <h3>2. What is the borrowing period?</h3>
+    <button onclick="toggleFAQ('answer2')">Show Answer</button>
+    <p id="answer2" class="answer">
+        Students can keep books for 14 days.
+    </p>
+
+    <h3>3. Is there a late return fine?</h3>
+    <button onclick="toggleFAQ('answer3')">Show Answer</button>
+    <p id="answer3" class="answer">
+        Yes, the fine is ₹5 per day.
+    </p>
+
+    <h3>4. Can I renew a book?</h3>
+    <button onclick="toggleFAQ('answer4')">Show Answer</button>
+    <p id="answer4" class="answer">
+        Yes, contact the librarian to renew your book.
+    </p>
+</section>
+
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 College Library | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
